@@ -23,7 +23,7 @@ Cloud Foundry Java Client (Toshiaki Maki, Pivotal)
  * Demo https://github.com/making/demo-cf-java
 
 .NET support update / SteelToe roadmap (Zach Brown, Pivotal)  
- * Slide https://github.com/shinji62/cf-meetup-tokyo-2016-03-01--1/dotNET_on_CF-Tokyo_CF_Meetup_3-31-16.pdf
+ * Slide https://github.com/shinji62/cf-meetup-tokyo-2016-03-01--1/blob/master/dotNET_on_CF-Tokyo_CF_Meetup_3-31-16.pdf
 
 
 #Picture
