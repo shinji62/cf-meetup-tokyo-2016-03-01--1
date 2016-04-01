@@ -1,58 +1,37 @@
 ### Cloud Foundry Tokyo Meetup #1
 
-
-## Slide
- * Route-service.pdf
- * http://www.slideshare.net/gwennetourneau/cloud-foundry-meetup-tokyo-1-route-service
+http://www.meetup.com/Cloud-Foundry-Tokyo-Meetup/events/229119655/
 
 
 
-##Demo
-You can use pcfdev on your laptop
-https://github.com/pivotal-cf/pcfdev    
+## Talk
+Introduction to Cloud Foundry
+ * Slide TBD
 
-#1 PHP application (final application)
-```bash
-$>cd php-simple
-$>cf push
-```
+Route services (Gwenn Etourneau, Pivotal) 
+ * Demo & Material https://github.com/shinji62/cf-meetup-tokyo-2016-03-01--1
+ * Slideshare   http://www.slideshare.net/gwennetourneau/cloud-foundry-meetup-tokyo-1-route-service
 
-Application should be deployed
-```bash
-$>curl -s php-simple.local.pcfdev.io
-hello cf meetup
-```
+Placement pools without placement pools (Carlo Alberto Ferraris, Rakuten) 
+ * Slide http://slides.com/cafxx/the-stack-hack#/
+  
+Running your application locally with cf local-push (Taichi Nakashima, Rakuten)
+ * Slide http://go-talks.appspot.com/github.com/tcnksm/talks/2016/03/cf-meetup/cf-meetup.slide#1
 
-#2 Go application (Route service)
-Checkout Repo: https://github.com/shinji62/go-service-cf-tokyo-meetup
+Cloud Foundry Java Client (Toshiaki Maki, Pivotal) 
+ * Slide http://www.slideshare.net/makingx/cloud-foundy-java-client-v-20
+ * Demo https://github.com/making/demo-cf-java
 
-```bash
-$>cd go-service-cf-tokyo-meetup 
-$>cf push
-```
-
-Create User provided instance
-```bash
-$> cf cups my-proxy -r https://route-service.local.pcfdev.io
-```
+.NET support update / SteelToe roadmap (Zach Brown, Pivotal)  
+ * Slide https://github.com/shinji62/cf-meetup-tokyo-2016-03-01--1/dotNET_on_CF-Tokyo_CF_Meetup_3-31-16.pdf
 
 
-Bind service to the php-simple domain
-```bash
-$>cf bind-route-service local.pcfdev.io my-proxy -n php-simple
-```
+#Picture
+ You can find all picture there
+https://drive.google.com/open?id=0B6-cY13f0pq6MXhvYldZNTB5ZHc
 
-Now the reponse from php-simple should be different
-```
 
- _            _  _                    __                             _
-| |__    ___ | || |  ___        ___  / _|     _ __ ___    ___   ___ | |_  _   _  _ __
-| '_ \  / _ \| || | / _ \      / __|| |_     | '_ ` _ \  / _ \ / _ \| __|| | | || '_ \
-| | | ||  __/| || || (_) |    | (__ |  _|    | | | | | ||  __/|  __/| |_ | |_| || |_) |
-|_| |_| \___||_||_| \___/      \___||_|      |_| |_| |_| \___| \___| \__| \__,_|| .__/
-                                                                                |_|
-                                                                                |_|
-```
+!["Image"](images/IMG_0761.jpg)
 
 
 
